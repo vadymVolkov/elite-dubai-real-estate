@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite Dubai Real Estate — Premier luxury properties in Dubai. Discover beachfront villas, sky penthouses, and high-yield investments.">
+    <title>Elite Dubai Real Estate | Ultra-Luxury Properties in Dubai</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header" id="header">
+        <div class="nav-container container">
+            <a href="#" class="brand-logo" id="brand-logo">
+                <img src="img/logo.png" alt="Elite Dubai Real Estate Logo" id="logo-img">
+                <span class="brand-text">Elite Dubai</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#properties" class="nav-link">Properties</a></li>
+                    <li><a href="#locations" class="nav-link">Locations</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn-outline" id="btn-header-consult">Consultation</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-content">
+                <div class="section-tag">
+                    <span>✦ Curated Dubai Luxury Portfolio</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Ultra-Luxury Properties in <span>Dubai</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Bespoke beachfront villas, sky-high penthouses, and private estates across Palm Jumeirah, Downtown Dubai, and Dubai Marina.
+                </p>
+
+                <!-- Search & Filter Bar -->
+                <div class="hero-search-bar" id="search-bar">
+                    <div class="search-field">
+                        <span class="search-label">Property Type</span>
+                        <select class="search-select" id="filter-type">
+                            <option value="all">All Categories</option>
+                            <option value="villas">Villas & Mansions</option>
+                            <option value="penthouses">Penthouses</option>
+                            <option value="apartments">Waterfront Apartments</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <span class="search-label">Location</span>
+                        <select class="search-select" id="filter-location">
+                            <option value="all">All Locations</option>
+                            <option value="palm">Palm Jumeirah</option>
+                            <option value="downtown">Downtown Dubai</option>
+                            <option value="marina">Dubai Marina</option>
+                            <option value="business-bay">Business Bay</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <span class="search-label">Price Range</span>
+                        <select class="search-select" id="filter-price">
+                            <option value="all">Any Price</option>
+                            <option value="5m-15m">$5M – $15M USD</option>
+                            <option value="15m-30m">$15M – $30M USD</option>
+                            <option value="30m+">$30M+ USD Ultra VIP</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-primary" id="btn-search">Search Residences</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Showcase Categories Section -->
+        <section class="properties-section" id="properties">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Exclusive Catalog</span>
+                    <h2 class="section-title">Featured <span>Residences</span></h2>
+                    <p class="section-subtitle">Handpicked trophy assets representing the pinnacle of architectural excellence.</p>
+                </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="filter-tabs" id="category-tabs">
+                    <button class="filter-btn active" data-category="all">All Properties</button>
+                    <button class="filter-btn" data-category="villas">Villas & Mansions</button>
+                    <button class="filter-btn" data-category="penthouses">Penthouses</button>
+                    <button class="filter-btn" data-category="apartments">Waterfront Apartments</button>
+                </div>
+
+                <!-- Property Cards Grid -->
+                <div class="properties-grid" id="properties-grid">
+                    
+                    <!-- Property 1: Villa -->
+                    <article class="property-card" data-category="villas">
+                        <div class="property-image-box">
+                            <img src="img/villa.png" alt="The Royal Palm Beachfront Mansion" class="property-image">
+                            <span class="property-badge">Beachfront Villa</span>
+                            <span class="property-price">$28,500,000</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">📍 Palm Jumeirah, Frond G</div>
+                            <h3 class="property-title">The Royal Palm Beachfront Mansion</h3>
+                            <div class="property-specs">
+                                <span class="spec-item">🛏️ 7 Beds</span>
+                                <span class="spec-item">🛁 9 Baths</span>
+                                <span class="spec-item">📐 16,500 sq.ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <span style="color: var(--text-secondary); font-size: 0.85rem;">Private Pool & Beach</span>
+                                <a href="#contact" class="btn-outline">Inquire</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Property 2: Penthouse -->
+                    <article class="property-card" data-category="penthouses">
+                        <div class="property-image-box">
+                            <img src="img/penthouse.png" alt="Burj Vista Sky Penthouse" class="property-image">
+                            <span class="property-badge">Trophy Penthouse</span>
+                            <span class="property-price">$19,200,000</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">📍 Downtown Dubai</div>
+                            <h3 class="property-title">Burj Vista Sky Penthouse</h3>
+                            <div class="property-specs">
+                                <span class="spec-item">🛏️ 5 Beds</span>
+                                <span class="spec-item">🛁 6 Baths</span>
+                                <span class="spec-item">📐 11,200 sq.ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <span style="color: var(--text-secondary); font-size: 0.85rem;">Full Burj Khalifa View</span>
+                                <a href="#contact" class="btn-outline">Inquire</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Property 3: Apartment -->
+                    <article class="property-card" data-category="apartments">
+                        <div class="property-image-box">
+                            <img src="img/apartment.png" alt="Marina Bay Superyacht Residence" class="property-image">
+                            <span class="property-badge">Waterfront</span>
+                            <span class="property-price">$8,750,000</span>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-location">📍 Dubai Marina</div>
+                            <h3 class="property-title">Marina Bay Superyacht Residence</h3>
+                            <div class="property-specs">
+                                <span class="spec-item">🛏️ 4 Beds</span>
+                                <span class="spec-item">🛁 5 Baths</span>
+                                <span class="spec-item">📐 5,800 sq.ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <span style="color: var(--text-secondary); font-size: 0.85rem;">Private Yacht Berth</span>
+                                <a href="#contact" class="btn-outline">Inquire</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Prime Locations Section -->
+        <section class="locations-section" id="locations">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Prime Destinations</span>
+                    <h2 class="section-title">Explore <span>Iconic Locations</span></h2>
+                    <p class="section-subtitle">Invest in Dubai's most prestigious and high-growth neighborhoods.</p>
+                </div>
+
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <img src="img/villa.png" alt="Palm Jumeirah">
+                        <div class="location-overlay">
+                            <h3 class="location-name">Palm Jumeirah</h3>
+                            <span class="location-count">14 Exclusive Mansions</span>
+                        </div>
+                    </div>
+
+                    <div class="location-card">
+                        <img src="img/penthouse.png" alt="Downtown Dubai">
+                        <div class="location-overlay">
+                            <h3 class="location-name">Downtown Dubai</h3>
+                            <span class="location-count">22 Penthouses & Towers</span>
+                        </div>
+                    </div>
+
+                    <div class="location-card">
+                        <img src="img/apartment.png" alt="Dubai Marina">
+                        <div class="location-overlay">
+                            <h3 class="location-name">Dubai Marina</h3>
+                            <span class="location-count">18 Waterfront Estates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Bespoke Advisory</span>
+                    <h2 class="section-title">VIP Client <span>Services</span></h2>
+                    <p class="section-subtitle">Tailored support for international high-net-worth investors and family offices.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">👑</div>
+                        <h3 class="service-title">Private Concierge & Jet Service</h3>
+                        <p class="service-desc">Helicopter property viewings, private jet terminal pickup, and luxury chauffeured tours across Dubai.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📜</div>
+                        <h3 class="service-title">UAE Golden Visa Assistance</h3>
+                        <p class="service-desc">Complete legal handling for 10-year Golden Visas for investors, family members, and key personnel.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">📈</div>
+                        <h3 class="service-title">High ROI Investment Advisory</h3>
+                        <p class="service-desc">Data-driven portfolio management targeting 8-12% annual rental yields and tax-free capital appreciation.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🗝️</div>
+                        <h3 class="service-title">Off-Plan Priority Access</h3>
+                        <p class="service-desc">First-look allocation for ultra-exclusive launches from Emaar, Nakheel, Select Group, and Omniyat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="services-section" id="about" style="background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Heritage & Trust</span>
+                    <h2 class="section-title">About <span>Elite Dubai</span></h2>
+                    <p class="section-subtitle">Over $1.5 Billion in ultra-luxury real estate transactions across the UAE.</p>
+                </div>
+
+                <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-secondary); font-size: 1.15rem; line-height: 1.8;">
+                    <p style="margin-bottom: 1.5rem;">
+                        Elite Dubai Real Estate is the premier boutique advisory firm specializing in high-value residential assets and off-market opportunities. We represent royal families, international entrepreneurs, and global celebrities looking to acquire iconic real estate in the United Arab Emirates.
+                    </p>
+                    <p>
+                        With zero property capital gains tax and world-class infrastructure, Dubai remains the global capital for luxury living.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="contact-info-title">Schedule a <span>Private Advisory</span></h2>
+                        <p class="contact-info-text">Speak directly with our senior luxury estate directors for confidential portfolio access.</p>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">📍</div>
+                            <div>
+                                <div class="contact-detail-label">Headquarters</div>
+                                <div class="contact-detail-value">Burj Crown Tower, Level 42, Downtown Dubai</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">📞</div>
+                            <div>
+                                <div class="contact-detail-label">VIP Concierge Desk</div>
+                                <div class="contact-detail-value">+971 4 800 ELITE (35483)</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">✉️</div>
+                            <div>
+                                <div class="contact-detail-label">Direct Email</div>
+                                <div class="contact-detail-value">vip@elitedubai.realestate</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="inquiry-form" onsubmit="event.preventDefault(); alert('Thank you! Our Luxury Advisor will contact you within 15 minutes.');">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-input" placeholder="e.g. Lord Alexander Sterling" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-input" placeholder="alexander@sterling.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number (with country code)</label>
+                            <input type="tel" class="form-input" placeholder="+1 (555) 019-2834" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Interested Category</label>
+                            <select class="form-select">
+                                <option>Beachfront Villa / Mansion</option>
+                                <option>Penthouse / Sky Villa</option>
+                                <option>Waterfront Luxury Apartment</option>
+                                <option>Commercial / Full Building</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Message / Specific Requirements</label>
+                            <textarea class="form-textarea" placeholder="Tell us about your preferred location, budget, and timeline..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%;">Submit Private Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="brand-logo">
+                        <img src="img/logo.png" alt="Elite Dubai Real Estate Logo">
+                        <span class="brand-text">Elite Dubai</span>
+                    </a>
+                    <p>The definitive leader in luxury Dubai real estate transactions, off-market advisory, and portfolio growth.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#properties">Beachfront Villas</a></li>
+                        <li><a href="#properties">Sky Penthouses</a></li>
+                        <li><a href="#properties">Marina Apartments</a></li>
+                        <li><a href="#properties">Private Islands</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Prime Locations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#locations">Palm Jumeirah</a></li>
+                        <li><a href="#locations">Downtown Dubai</a></li>
+                        <li><a href="#locations">Dubai Marina</a></li>
+                        <li><a href="#locations">Business Bay</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">VIP Concierge</a></li>
+                        <li><a href="#services">Golden Visa</a></li>
+                        <li><a href="#services">Off-Plan Access</a></li>
+                        <li><a href="#services">Property Management</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elite Dubai Real Estate. All rights reserved.</p>
+                <p>Designed with luxury aesthetic excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
