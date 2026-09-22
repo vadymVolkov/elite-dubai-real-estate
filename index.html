@@ -9,6 +9,12 @@
 </head>
 <body>
 
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Floating Back to Top Button -->
+    <button id="btn-back-to-top" title="Back to top">↑</button>
+
     <!-- Header & Navigation -->
     <header class="site-header" id="header">
         <div class="nav-container container">
@@ -35,21 +41,24 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-section" id="hero">
+            <div class="hero-glow-1"></div>
+            <div class="hero-glow-2"></div>
+
             <div class="container hero-content">
-                <div class="section-tag">
+                <div class="section-tag reveal-on-scroll">
                     <span>✦ Curated Dubai Luxury Portfolio</span>
                 </div>
                 
-                <h1 class="hero-title">
+                <h1 class="hero-title reveal-on-scroll delay-1">
                     Ultra-Luxury Properties in <span>Dubai</span>
                 </h1>
                 
-                <p class="hero-subtitle">
+                <p class="hero-subtitle reveal-on-scroll delay-2">
                     Bespoke beachfront villas, sky-high penthouses, and private estates across Palm Jumeirah, Downtown Dubai, and Dubai Marina.
                 </p>
 
                 <!-- Search & Filter Bar -->
-                <div class="hero-search-bar" id="search-bar">
+                <div class="hero-search-bar reveal-on-scroll delay-3" id="search-bar">
                     <div class="search-field">
                         <span class="search-label">Property Type</span>
                         <select class="search-select" id="filter-type">
@@ -86,17 +95,41 @@
             </div>
         </section>
 
+        <!-- Stats Counter Section -->
+        <section class="stats-section" id="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal-on-scroll delay-1">
+                        <div class="stat-number" data-target="1.5">$0B+</div>
+                        <div class="stat-label">Transactions Volume</div>
+                    </div>
+                    <div class="stat-item reveal-on-scroll delay-2">
+                        <div class="stat-number" data-target="100">0%</div>
+                        <div class="stat-label">Tax-Free Ownership</div>
+                    </div>
+                    <div class="stat-item reveal-on-scroll delay-3">
+                        <div class="stat-number" data-target="10">0 Yrs</div>
+                        <div class="stat-label">Golden Visa Qualified</div>
+                    </div>
+                    <div class="stat-item reveal-on-scroll delay-4">
+                        <div class="stat-number" data-target="12">0%</div>
+                        <div class="stat-label">Average Annual Yield</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Properties Showcase Categories Section -->
         <section class="properties-section" id="properties">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <span class="section-tag">Exclusive Catalog</span>
                     <h2 class="section-title">Featured <span>Residences</span></h2>
                     <p class="section-subtitle">Handpicked trophy assets representing the pinnacle of architectural excellence.</p>
                 </div>
 
                 <!-- Category Filter Tabs -->
-                <div class="filter-tabs" id="category-tabs">
+                <div class="filter-tabs reveal-on-scroll delay-1" id="category-tabs">
                     <button class="filter-btn active" data-category="all">All Properties</button>
                     <button class="filter-btn" data-category="villas">Villas & Mansions</button>
                     <button class="filter-btn" data-category="penthouses">Penthouses</button>
@@ -107,7 +140,7 @@
                 <div class="properties-grid" id="properties-grid">
                     
                     <!-- Property 1: Villa -->
-                    <article class="property-card" data-category="villas">
+                    <article class="property-card reveal-on-scroll reveal-zoom delay-1" data-category="villas">
                         <div class="property-image-box">
                             <img src="img/villa.png" alt="The Royal Palm Beachfront Mansion" class="property-image">
                             <span class="property-badge">Beachfront Villa</span>
@@ -129,7 +162,7 @@
                     </article>
 
                     <!-- Property 2: Penthouse -->
-                    <article class="property-card" data-category="penthouses">
+                    <article class="property-card reveal-on-scroll reveal-zoom delay-2" data-category="penthouses">
                         <div class="property-image-box">
                             <img src="img/penthouse.png" alt="Burj Vista Sky Penthouse" class="property-image">
                             <span class="property-badge">Trophy Penthouse</span>
@@ -151,7 +184,7 @@
                     </article>
 
                     <!-- Property 3: Apartment -->
-                    <article class="property-card" data-category="apartments">
+                    <article class="property-card reveal-on-scroll reveal-zoom delay-3" data-category="apartments">
                         <div class="property-image-box">
                             <img src="img/apartment.png" alt="Marina Bay Superyacht Residence" class="property-image">
                             <span class="property-badge">Waterfront</span>
@@ -179,14 +212,14 @@
         <!-- Prime Locations Section -->
         <section class="locations-section" id="locations">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <span class="section-tag">Prime Destinations</span>
                     <h2 class="section-title">Explore <span>Iconic Locations</span></h2>
                     <p class="section-subtitle">Invest in Dubai's most prestigious and high-growth neighborhoods.</p>
                 </div>
 
                 <div class="locations-grid">
-                    <div class="location-card">
+                    <div class="location-card reveal-on-scroll reveal-left delay-1">
                         <img src="img/villa.png" alt="Palm Jumeirah">
                         <div class="location-overlay">
                             <h3 class="location-name">Palm Jumeirah</h3>
@@ -194,7 +227,7 @@
                         </div>
                     </div>
 
-                    <div class="location-card">
+                    <div class="location-card reveal-on-scroll reveal-zoom delay-2">
                         <img src="img/penthouse.png" alt="Downtown Dubai">
                         <div class="location-overlay">
                             <h3 class="location-name">Downtown Dubai</h3>
@@ -202,7 +235,7 @@
                         </div>
                     </div>
 
-                    <div class="location-card">
+                    <div class="location-card reveal-on-scroll reveal-right delay-3">
                         <img src="img/apartment.png" alt="Dubai Marina">
                         <div class="location-overlay">
                             <h3 class="location-name">Dubai Marina</h3>
@@ -216,32 +249,32 @@
         <!-- Services Section -->
         <section class="services-section" id="services">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <span class="section-tag">Bespoke Advisory</span>
                     <h2 class="section-title">VIP Client <span>Services</span></h2>
                     <p class="section-subtitle">Tailored support for international high-net-worth investors and family offices.</p>
                 </div>
 
                 <div class="services-grid">
-                    <div class="service-card">
+                    <div class="service-card reveal-on-scroll delay-1">
                         <div class="service-icon">👑</div>
                         <h3 class="service-title">Private Concierge & Jet Service</h3>
                         <p class="service-desc">Helicopter property viewings, private jet terminal pickup, and luxury chauffeured tours across Dubai.</p>
                     </div>
 
-                    <div class="service-card">
+                    <div class="service-card reveal-on-scroll delay-2">
                         <div class="service-icon">📜</div>
                         <h3 class="service-title">UAE Golden Visa Assistance</h3>
                         <p class="service-desc">Complete legal handling for 10-year Golden Visas for investors, family members, and key personnel.</p>
                     </div>
 
-                    <div class="service-card">
+                    <div class="service-card reveal-on-scroll delay-3">
                         <div class="service-icon">📈</div>
                         <h3 class="service-title">High ROI Investment Advisory</h3>
                         <p class="service-desc">Data-driven portfolio management targeting 8-12% annual rental yields and tax-free capital appreciation.</p>
                     </div>
 
-                    <div class="service-card">
+                    <div class="service-card reveal-on-scroll delay-4">
                         <div class="service-icon">🗝️</div>
                         <h3 class="service-title">Off-Plan Priority Access</h3>
                         <p class="service-desc">First-look allocation for ultra-exclusive launches from Emaar, Nakheel, Select Group, and Omniyat.</p>
@@ -253,13 +286,13 @@
         <!-- About Us Section -->
         <section class="services-section" id="about" style="background: var(--bg-primary);">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header reveal-on-scroll">
                     <span class="section-tag">Heritage & Trust</span>
                     <h2 class="section-title">About <span>Elite Dubai</span></h2>
                     <p class="section-subtitle">Over $1.5 Billion in ultra-luxury real estate transactions across the UAE.</p>
                 </div>
 
-                <div style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-secondary); font-size: 1.15rem; line-height: 1.8;">
+                <div class="reveal-on-scroll delay-1" style="max-width: 900px; margin: 0 auto; text-align: center; color: var(--text-secondary); font-size: 1.15rem; line-height: 1.8;">
                     <p style="margin-bottom: 1.5rem;">
                         Elite Dubai Real Estate is the premier boutique advisory firm specializing in high-value residential assets and off-market opportunities. We represent royal families, international entrepreneurs, and global celebrities looking to acquire iconic real estate in the United Arab Emirates.
                     </p>
@@ -273,7 +306,7 @@
         <!-- Contact Section -->
         <section class="contact-section" id="contact">
             <div class="container">
-                <div class="contact-container">
+                <div class="contact-container reveal-on-scroll reveal-zoom">
                     <div class="contact-info">
                         <span class="section-tag">Get In Touch</span>
                         <h2 class="contact-info-title">Schedule a <span>Private Advisory</span></h2>
